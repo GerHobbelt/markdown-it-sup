@@ -9,13 +9,13 @@
     "superscript",
     "sup"
   ],
-  "homepage": "https://github.com/markdown-it/markdown-it-sup",
+  "homepage": "https://github.com/hsk81/markdown-it-sup",
   "repository": {
     "type": "git",
-    "url": "git://github.com/markdown-it/markdown-it-sup.git"
+    "url": "git://github.com/hsk81/markdown-it-sup.git"
   },
   "bugs": {
-    "url": "https://github.com/markdown-it/markdown-it-sup/issues"
+    "url": "https://github.com/hsk81/markdown-it-sup/issues"
   },
   "license": "MIT",
   "main": "index.js",

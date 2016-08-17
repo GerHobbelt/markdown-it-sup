@@ -1,47 +1,47 @@
 .
-^test^
+^{test}
 .
 <p><sup>test</sup></p>
 .
 
 .
-^foo\^
+^{foo\}
 .
-<p>^foo^</p>
-.
-
-.
-2^4 + 3^5
-.
-<p>2^4 + 3^5</p>
+<p>^{foo}</p>
 .
 
 .
-^foo~bar^baz^bar~foo^
+2^{4 + 3}5
+.
+<p>2<sup>4 + 3</sup>5</p>
+.
+
+.
+^{foo~bar}baz^{bar~foo}
 .
 <p><sup>foo~bar</sup>baz<sup>bar~foo</sup></p>
 .
 
 .
-^\ foo\ ^
+^{\ foo\ }
 .
 <p><sup> foo </sup></p>
 .
 
 .
-^foo\\\\\\\ bar^
+^{foo\\\\\\\ bar}
 .
 <p><sup>foo\\\ bar</sup></p>
 .
 
 .
-^foo\\\\\\ bar^
+^{foo\\\\\\ bar}
 .
-<p>^foo\\\ bar^</p>
+<p><sup>foo\\\ bar</sup></p>
 .
 
 .
-**^foo^ bar**
+**^{foo} bar**
 .
 <p><strong><sup>foo</sup> bar</strong></p>
 .
