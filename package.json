@@ -23,16 +23,16 @@
     "test": "make test"
   },
   "devDependencies": {
-    "browserify": "*",
-    "coveralls": "^2.11.2",
-    "eslint": "0.10.2",
-    "eslint-plugin-nodeca": "^1.0.0",
-    "istanbul": "*",
-    "lodash": "*",
-    "markdown-it": "^4.0.0",
-    "markdown-it-testgen": "~0.1.0",
-    "mocha": "*",
-    "request": "*",
-    "uglify-js": "*"
+    "browserify": "14.4.0",
+    "coveralls": "2.13.1",
+    "eslint": "3.19.0",
+    "eslint-plugin-nodeca": "1.0.3",
+    "istanbul": "0.4.5",
+    "lodash": "4.17.4",
+    "markdown-it": "8.3.1",
+    "markdown-it-testgen": "0.1.4",
+    "mocha": "3.4.2",
+    "request": "2.81.0",
+    "uglify-js": "3.0.15"
   }
 }

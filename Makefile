@@ -11,17 +11,16 @@ GITHUB_PROJ := https://github.com//markdown-it/${NPM_PACKAGE}
 
 
 lint:
-	./node_modules/.bin/eslint --reset .
+	./node_modules/.bin/eslint .
 
 test: lint
 	./node_modules/.bin/mocha -R spec
 
 coverage:
 	rm -rf coverage
-	./node_modules/.bin/istanbul cover node_modules/.bin/_mocha
+	./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec
 
-test-ci: lint
-	istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
+test-ci: lint coverage
 
 browserify:
 	rm -rf ./dist
@@ -35,5 +34,5 @@ browserify:
 		--preamble "/*! ${NPM_PACKAGE} ${NPM_VERSION} ${GITHUB_PROJ} @license MIT */" \
 		> dist/markdown-it-sup.min.js
 
-.PHONY: lint test coverage
-.SILENT: lint test
+.PHONY: lint test coverage test-ci browserify
+#.SILENT: lint test
