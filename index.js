@@ -3,7 +3,8 @@
 'use strict';
 
 // same as UNESCAPE_MD_RE plus a space
-var UNESCAPE_RE = /\\([ \\!"#$%&'()*+,.\/:;<=>?@[\]^_`{|}~-])/g;
+var UNESCAPE_RE = /\\([ \\!"#$%&'()*+,./:;<=>?@[\]^_`{|}~-])/g;
+
 
 function superscript(state, silent) {
   var found,
