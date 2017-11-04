@@ -1,8 +1,8 @@
 # markdown-it-sup
 
 [![Build Status](https://img.shields.io/travis/GerHobbelt/markdown-it-sup/master.svg?style=flat)](https://travis-ci.org/GerHobbelt/markdown-it-sup)
-[![NPM version](https://img.shields.io/npm/v/markdown-it-sup.svg?style=flat)](https://www.npmjs.org/package/markdown-it-sup)
-[![Coverage Status](https://img.shields.io/coveralls/markdown-it/markdown-it-sup/master.svg?style=flat)](https://coveralls.io/r/markdown-it/markdown-it-sup?branch=master)
+[![NPM version](https://img.shields.io/npm/v/markdown-it-sup.svg?style=flat)](https://www.npmjs.org/package/@gerhobbelt/markdown-it-sup)
+[![Coverage Status](https://img.shields.io/coveralls/GerHobbelt/markdown-it-sup/master.svg?style=flat)](https://coveralls.io/r/GerHobbelt/markdown-it-sup?branch=master)
 
 > Superscript (`<sup>`) tag plugin for [markdown-it](https://github.com/markdown-it/markdown-it) markdown parser.
 
@@ -18,15 +18,15 @@ Markup is based on [pandoc](http://johnmacfarlane.net/pandoc/README.html#supersc
 node.js, browser:
 
 ```bash
-npm install markdown-it-sup --save
-bower install markdown-it-sup --save
+npm install @gerhobbelt/markdown-it-sup --save
+bower install @gerhobbelt/markdown-it-sup --save
 ```
 
 ## Use
 
 ```js
-var md = require('markdown-it')()
-            .use(require('markdown-it-sup'));
+var md = require('@gerhobbelt/markdown-it')()
+            .use(require('@gerhobbelt/markdown-it-sup'));
 
 md.render('29^th^') // => '<p>29<sup>th</sup></p>'
 ```
@@ -37,4 +37,4 @@ package system, module will add itself globally as `window.markdownitSup`.
 
 ## License
 
-[MIT](https://github.com/markdown-it/markdown-it-sup/blob/master/LICENSE)
+[MIT](https://github.com/GerHobbelt/markdown-it-sup/blob/master/LICENSE)
